@@ -1,0 +1,250 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compatible" contents="IE=edge">
+    <meta name="viewport" contents="width=device-width, initial-scale=1.0">
+    <title>
+      Ecommerce Site
+    </title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="https://kit.fontawesome.com/f43fcc6589.js" crossorigin="anonymous"></script>
+  </head>
+
+   <body>
+    <section id="header">
+      <a href="#"><img src="{% static 'images/logo.png' %}" class="logo" alt=""></a>
+      </div>
+          <ul id="navbar">
+            <li><a href="{% url 'core:index' %}">Home</a></li>
+            <li><a href="{% url 'core:shop' %}">Shop</a></li>
+            <li><a class="active" href="{% url 'core:blog' %}">Blog</a></li>
+            <li><a href="{% url 'core:about' %}">About</a></li>
+            <li><a href="{% url 'core:contact' %}">Contact</a></li>
+            <li id="lg-bag"><a href="{% url 'core:cart' %}"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            <a href="#" id="close"><i class="far fa-times"></i></a>
+            <li id="user"></li>
+
+      </div>
+      <div id="mobile">
+        
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
+    </section>
+
+    <section id="page-header" class="blog-header">
+      
+      <h2>CHECK THIS OUT</h2>
+      
+      <p>Save more with coupons & up to 70% off!</p>
+     
+
+    </section>
+   
+    <section id="blog">
+        <div class="blog-box">
+           <div class="blog-img">
+             <img src="{% static 'images/blog1.jpg' %}" alt="">
+           </div>
+           <div class="blog-details">
+            <h4>Zara Zip up Dress</h4>
+            <p>Dream Beauty Fashion Women's Short Sleeves Casual Midi Bodycon Polyster Blend Dress Its delicate design, characterized by a subtle yet alluring interplay of fabrics, promises not just comfort but also a chic aesthetic that stands out. The intricate detailing and craftsmanship are evident, promising an ensemble that's as enduring as it is enchanting. Whether you're attending a gala, a wedding, or a special evening event, this dress will ensure you make a memorable impression.</p>
+            <a href="#">CONTINUE READING</a>
+           </div>
+           <h1>13/01</h1>
+        </div>
+    
+
+
+
+        <div class="blog-box">
+          <div class="blog-img">
+            <img src="{% static 'images/blog2.jpg' %}"alt="">
+          </div>  
+          <div class="blog-details">
+           <h4>black and caramel V neck zara top</h4>
+           <p>The V-neck T-shirt now comes in new season colours, as well as timeless black, white and caramel happy Black and Caramel V" appears to be a design or product, possibly in the realm of fashion or aesthetics. Without specific details, it's challenging to provide a detailed description. If you can provide more context or details, I'd be happy to help further </p>
+           <a href="#">CONTINUE READING</a>
+          </div>
+          <h1>13/02</h1>
+          </div>    
+
+        <div class="blog-box">
+          <div class="blog-img">
+            <img src="{% static 'images/blog3.jpg' %}"alt="">
+          </div>
+          <div class="blog-details">
+               <h4>Step into the bright, well-lit ambiance of this modern clothing stor </h4>
+               <p>sanctuary for fashion enthusiasts. The aesthetic is sleek and inviting, with white-tiled floors and walls creating a clean canvas a sanctuary for fashion enthusiasts. Every corner of our store is meticulously designed to elevate your shopping experience. With an array of clothing displayed, each piece is a blend of style and comfort, promising quality that stands the test of time. The ambient lighting accentuates the vibrant colors and intricate designs of our collection, inviting you to a world where fashion meets art.</p>
+               <a href="#">CONTINUE READING</a>
+          </div>
+          <h1>13/03</h1>   
+          </div>          
+              
+
+
+
+          
+        <div class="blog-box">
+          <div class="blog-img">
+            <img src="{% static 'images/blog4.jpg' %}"alt="">
+          </div>
+        <div class="blog-details">
+           <h4>Longline Open Front Shrug</h4>
+           <p>Elegant and Chic in its outlook, Code is positioned as fashion solution for the women of today A "longline open front shrug" typically refers to a cardigan or jacket with an extended length and an open front design. This style provides a versatile layering option, perfect for casual or semi-formal occasions. The elongated silhouette and open front make it a stylish and comfortable choice to complement various outfits.</p>
+           <a href="#">CONTINUE READING</a>
+        </div>
+        <h1>13/04</h1>
+        </div>
+
+
+
+ 
+        <div class="blog-box">
+          <div class="blog-img">
+            <img src="{% static 'images/blog5.jpg' %}"alt="">
+          </div>  
+          <div class="blog-details">
+             <h4>Relaxed Fit Hoodie with Kangaroo Pocket</h4>
+             <p>Step into elegance and comfort with our latest knitwear collection. This grey, finely woven sweater exemplifies sophistication, offering a relaxed yet chic aesthetic A grey hoodie is a classic and versatile wardrobe essential. Its neutral color makes it easy to pair with different outfits, offering both comfort and style. Whether for a casual day out or a relaxed evening, a grey hoodie adds a laid- back and timeless appeal to your look</p>
+             <a href="#">CONTINUE READING</a>
+          </div>
+          <h1>13/05</h1>
+          </div>
+           
+          
+
+
+
+
+          <div class="blog-box">
+            <div class="blog-img">
+                <img src="{% static 'images/blog6.jpg' %}"alt="">
+            </div> 
+            <div class="blog-details">
+               <h4>DIY Natural Skincare: Using Apples for a Healthy Glow DIY Natural Skincare: Using Apples for a Healthy Glow </h4>
+               <p>As the leaves turn golden and the air grows crisp, there’s something enchanting about the fall season. It’s a time when orchards overflow with ripe apples, and cozy kitchens come alive with the aroma of spices and simmering pots. It’s the secret ingredient in grandma’s pie crust or a dollop stirred into morning yogurt. Versatile and delightful, it’s a taste of fall in every bite </p>
+               <a href="#">CONTINUE READING</a>
+            </div>
+            <h1>13/06</h1>
+            </div>
+
+
+
+
+ 
+            <div class="blog-box">
+              <div class="blog-img">
+                <img src="{% static 'images/blog7.jpg' %}"alt="">
+              </div>
+              <div class="blog-details">
+                 <h4>Tying the Knot: Exploring Unique Back Details in Women’s Clothing</h4>
+                 <p>The simplicity of its design speaks volumes, emphasizing that elegance need not be extravagant. The slender bow delicately tied at the upper back adds a touch of sophistication, inviting curiosity and admiration</p>
+                 <a href="#">CONTINUE READING</a>
+              </div>
+              <h1>13/07</h1>
+              </div>            
+ 
+ 
+            <!-- <div class="blog-box">
+              <div class="blog-img">
+                <img src="{% static 'images/blog8.jpg' %}"alt="">
+              </div>  
+              <div class="blog-details">
+                 <h4>Cozy Corners Creating the Perfect Reading Space at Home</h4>
+                 <p>In a world of screens and digital distractions, there’s something magical about holding a physical book. The weight of the pages, the faint rustle as you turn them, and the ink that dances across the paper—it all contributes to the joy of reading. Rediscover the pleasure of getting lost in a story, of feeling the texture of each page, and of immersing yourself in a world beyond the confines of your own</p>
+                 <a href="#">CONTINUE READING</a>
+              </div>
+              <h1>13/08</h1>
+              </div> -->
+          
+          
+
+     
+      </section>
+    
+
+    <section id="pagination" class="section-p1">
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
+    </section>
+
+
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+        <h4>Sign Up For newsletter</h4>
+        <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your email address">
+        <button class="normal">Sign Up</button>
+      </div>
+    </section>
+
+    <footer class="section-p1">
+      <div class="col">
+        <img class="logo" src="{% static 'images/logo.png' %}" alt="">
+        <h4>Contact</h4>
+        <p><strong>Address: </strong>MACET, Neora, Patna</p>
+        <p><strong>Phone:</strong> +91-9876543210</p>
+        <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+        <div class="follow">
+          <h4>Follow Us</h4>
+          <div class="icon">
+            <i class="fa fa-facebook-f"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-pinterest"></i>
+            <i class="fa fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & COnditions</a>
+        <a href="#">COntact us</a>
+        
+
+      </div>
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help </a>
+        
+
+      </div>
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+          <img src="{% static 'images/app.jpg' %}" alt="">
+          <img src="{% static 'images/play.jpg' %}" alt="">
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="{% static 'images/pay.png' %}" alt="">
+      </div>
+
+      <div class="copyright">
+        <p>2024, Project</p>
+      </div>
+    </footer>
+
+
+
+    <script src="{% static 'script.js' %}"></script>
+    <script src="{% static 'user.js' %}"></script>
+  </body>
+</html>

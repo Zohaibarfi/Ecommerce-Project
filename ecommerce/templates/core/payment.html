@@ -1,0 +1,70 @@
+<!-- google_pay.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Pay Payment</title>
+    <script src="https://pay.google.com/gp/p/js/pay.js"></script>
+    <style>
+        #container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="googlePayButton"></div>
+    </div>
+
+    <script>
+        const baseRequest = {
+            apiVersion: 2,
+            apiVersionMinor: 0,
+            allowedPaymentMethods: [{
+                type: 'CARD',
+                parameters: {
+                    allowedAuthMethods: ['PAN_ONLY', 'CRYPTOGRAM_3DS'],
+                    allowedCardNetworks: ['MASTERCARD', 'VISA']
+                },
+                tokenizationSpecification: {
+                    type: 'PAYMENT_GATEWAY',
+                    parameters: {
+                        'gateway': 'example',
+                        'gatewayMerchantId': 'exampleGatewayMerchantId'
+                    }
+                }
+            }],
+            merchantInfo: {
+                merchantId: 'your-merchant-id',
+                merchantName: 'Example Merchant'
+            },
+            transactionInfo: {
+                totalPriceStatus: 'FINAL',
+                totalPriceLabel: 'Total',
+                totalPrice: '10.00',
+                currencyCode: 'USD',
+                countryCode: 'US'
+            }
+        };
+
+        const paymentsClient = new google.payments.api.PaymentsClient({environment: 'TEST'});
+
+        function onGooglePayButtonClicked() {
+            paymentsClient.loadPaymentData(baseRequest)
+                .then(function(paymentData) {
+                    // Handle payment data
+                    console.log('Payment Data:', paymentData);
+                    // Redirect or process the payment
+                }).catch(function(err) {
+                    console.error('Payment failed:', err);
+                });
+        }
+
+        const button = paymentsClient.createButton({onClick: onGooglePayButtonClicked});
+        document.getElementById('googlePayButton').appendChild(button);
+    </script>
+</body>
+</html>

@@ -1,0 +1,410 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compatible" contents="IE=edge">
+    <meta name="viewport" contents="width=device-width, initial-scale=1.0">
+    <title>
+      Ecommerce Site
+    </title>
+
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <script src="https://kit.fontawesome.com/f43fcc6589.js" crossorigin="anonymous"></script>
+  </head>
+
+   <body>
+    <section id="header">
+      <a href="#"><img src="{% static 'images/logo.png' %}" class="logo" alt=""></a>
+
+      <div>
+        <ul id="navbar">
+          <li><a href="{% url 'core:index' %}">Home</a></li>
+          <li><a class="active" href="shop.html">Shop</a></li>
+          <li><a href="{% url 'core:blog' %}">Blog</a></li>
+          <li><a href="{% url 'core:about' %}">About</a></li>
+          <li><a href="{% url 'core:contact' %}">Contact</a></li>
+          <li id="lg-bag"><a href="{% url 'core:cart' %}"><i class="fa-solid fa-bag-shopping"></i></a></li>
+          <a href="#" id="close"><i class="far fa-times"></i></a>
+          <li id="user"></li>
+          
+
+
+        </ul>
+      </div>
+      <div id="mobile">
+        
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
+    </section>
+
+    <section id="page-header">
+      
+      <h2>#stayhome</h2>
+      
+      <p>Save more with coupons & up to 70% off!</p>
+     
+
+    </section>
+
+   
+    <section id="product1" class="section-p1">
+     
+      <div class="pro-container">
+        <div class="pro" onclick="window.location.href='sproduct.html';">
+          <img src="{% static 'images/f1.jpg' %}" alt="">
+          <div class="des">
+            <span>adidas</span>
+            <h5>Abstract floral Shirt</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4> Rs.399</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+
+        </div>
+        <div class="pro">
+          <img src="{% static 'images/f2.jpg' %}" alt="">
+          <div class="des">
+            <span>adidas</span>
+            <h5>Leaf Coral shirt</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4> Rs.399</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+
+        </div>
+        <div class="pro">
+          <img src="{% static 'images/f3.jpg' %}" alt="">
+          <div class="des">
+            <span>adidas</span>
+            <h5>Floral Explosive shirt</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4> Rs.399</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="pro">
+          <img src="{% static 'images/f4.jpg' %}" alt="">
+          <div class="des">
+            <span>adidas</span>
+            <h5>Floral Elegance shirt</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4> Rs.399</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="pro">
+          <img src="{% static 'images/f5.jpg' %}" alt="">
+          <div class="des">
+            <span>adidas</span>
+            <h5>Floral Galaxy shirt</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4> Rs.399</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+
+        </div>
+        <div class="pro">
+          <img src="{% static 'images/f6.jpg' %}" alt="">
+          <div class="des">
+            <span>adidas</span>
+            <h5>Color-Blocked Casual shirt</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4> Rs.799</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+
+        </div>
+        <div class="pro">
+          <img src="{% static 'images/f7.jpg' %}" alt="">
+          <div class="des">
+            <span>adidas</span>
+            <h5>Breezzy Comfort Loose Chinos</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4> Rs.499</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="pro">
+          <img src="{% static 'images/f8.jpg' %}" alt="">
+          <div class="des">
+            <span>adidas</span>
+            <h5>Doodle Grey V-Neck Top</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4> Rs.499</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+
+    
+
+    
+
+   
+      
+        <div class="pro">
+          <img src="{% static 'images/n1.jpg' %}" alt="">
+          <div class="des">
+            <span>adidas</span>
+            <h5>Celio Linen Shirt</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4> Rs.399</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+
+        </div>
+        <div class="pro">
+          <img src="{% static 'images/n2.jpg' %}" alt="">
+          <div class="des">
+            <span>adidas</span>
+            <h5>BEN Sherman Casual Shirt</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4> Rs.399</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+
+        </div>
+        <div class="pro">
+          <img src="{% static 'images/n3.jpg' %}" alt="">
+          <div class="des">
+            <span>adidas</span>
+            <h5>VASTRADO Blue Cotton Shirt</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4> Rs.399</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="pro">
+          <img src="{% static 'images/n4.jpg' %}" alt="">
+          <div class="des">
+            <span>adidas</span>
+            <h5>Paisely Print Regular fit</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4> Rs.250</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+
+        </div>
+        <div class="pro">
+          <img src="{% static 'images/n5.jpg' %}" alt="">
+          <div class="des">
+            <span>adidas</span>
+            <h5>Linen-blend shiet slim fit</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4> Rs.399</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="pro">
+          <img src="{% static 'images/n6.jpg' %}" alt="">
+          <div class="des">
+            <span>adidas</span>
+            <h5>Ralph lauren grey strip shorts</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4> Rs.499</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="pro">
+          <img src="{% static 'images/n7.jpg' %}" alt="">
+          <div class="des">
+            <span>adidas</span>
+            <h5>Beige Houndstooth Shirt Jacket</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4> Rs.799</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+
+        </div>
+        <div class="pro">
+          <img src="{% static 'images/n8.jpg' %}" alt="">
+          <div class="des">
+            <span>adidas</span>
+            <h5>Allen Solly Navy Knit Shirt</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4> Rs.499</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+
+        </div>
+ 
+      </div>
+    </section>
+
+    <section id="pagination" class="section-p1">
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
+    </section>
+
+
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+        <h4>Sign Up For newsletter</h4>
+        <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your email address">
+        <button class="normal">Sign Up</button>
+      </div>
+    </section>
+
+    <footer class="section-p1">
+      <div class="col">
+        <img class="logo" src="{% static 'images/logo.png' %}" alt="">
+        <h4>Contact</h4>
+        <p><strong>Address: </strong>MACET, Neora, Patna</p>
+        <p><strong>Phone:</strong> +91-9876543210</p>
+        <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+        <div class="follow">
+          <h4>Follow Us</h4>
+          <div class="icon">
+            <i class="fa fa-facebook-f"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-pinterest"></i>
+            <i class="fa fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & COnditions</a>
+        <a href="#">COntact us</a>
+        
+
+      </div>
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help </a>
+        
+
+      </div>
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+          <img src="{% static 'images/app.jpg' %}" alt="">
+          <img src="{% static 'images/play.jpg' %}" alt="">
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="{% static 'images/pay.png' %}" alt="">
+      </div>
+
+      <div class="copyright">
+        <p>2024, Project</p>
+      </div>
+    </footer>
+
+
+
+    <script src="{% static 'script.js' %}"></script>
+    <script src="{% static 'user.js' %}"></script>
+  </body>
+</html>
